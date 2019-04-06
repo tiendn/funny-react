@@ -1,8 +1,13 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import logo from "../logo.svg";
+import "./App.css";
+import ExcelUtils from "../utils/excel";
 
 class App extends Component {
+  componentDidMount() {
+    ExcelUtils.insertProductImages("/Users/monkey/Desktop/x.xlsx");
+  }
+
   render() {
     return (
       <div className="App">
